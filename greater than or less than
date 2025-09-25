@@ -1,0 +1,48 @@
+Sanjay wants to learn the calculation of integer digits.could you please help him to implements the sum of digits in programming. Notes:- - If the integer is 45,separate the each digits (4+5) the output is 9.
+
+Input Format
+
+input consists of one integer.
+Constraints
+
+Given N is greater than 9 and lesser than 99
+Output Format
+
+execute the sum of digits values. Notes:-
+If the input is above 100, execute the statements is "Invalid Input".
+Sample Input 0
+
+23
+Sample Output 0
+
+Sum of Digit 23 is 005
+Sample Input 1
+
+56
+Sample Output 1
+
+Sum of Digit 56 is 011
+Sample Input 2
+
+100
+Sample Output 2
+
+Invalid Input
+Contest ends in 5 days
+Submissions: 106
+Max Score: 10
+Difficulty: Medium
+Rate This Challenge:
+
+    
+ 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+num=str(n)
+if n>9 and n<99:
+    a=int(num[0])
+    b=int(num[1])
+    s=a+b
+    print(f"Sum of Digit {n} is {s:03d}")
+else:
+    print("Invalid Input")
